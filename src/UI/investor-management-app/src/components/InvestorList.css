@@ -1,0 +1,175 @@
+.investor-list {
+  width: 100%;
+}
+
+/* Pagination Styles */
+.pagination-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 15px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.items-per-page {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.items-per-page label {
+  color: #4b5563;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.items-per-page select {
+  padding: 6px 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background-color: white;
+  font-size: 0.9rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s;
+}
+
+.items-per-page select:hover {
+  border-color: #9ca3af;
+}
+
+.items-per-page select:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+.page-info {
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+.page-navigation {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.page-button {
+  padding: 6px 12px;
+  border: 1px solid #d1d5db;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+  color: #4b5563;
+}
+
+.page-button:hover:not(:disabled) {
+  background-color: #f3f4f6;
+  border-color: #9ca3af;
+  color: #111827;
+}
+
+.page-button:disabled {
+  color: #d1d5db;
+  cursor: not-allowed;
+  background-color: #f9fafb;
+}
+
+.page-indicator {
+  margin: 0 10px;
+  font-size: 0.9rem;
+  color: #4b5563;
+  font-weight: 500;
+}
+
+.investor-list table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-top: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.investor-list th, 
+.investor-list td {
+  padding: 14px 16px;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.investor-list th {
+  background-color: #f9fafb;
+  font-weight: 600;
+  color: #374151;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+}
+
+.investor-list th:first-child {
+  border-top-left-radius: 8px;
+}
+
+.investor-list th:last-child {
+  border-top-right-radius: 8px;
+}
+
+.investor-list .investor-row {
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.investor-list .investor-row:hover {
+  background-color: #f3f4f6;
+}
+
+.investor-list .investor-row td {
+  font-family: 'Inter', 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 0.95rem;
+  color: #1f2937;
+}
+
+.investor-list .investor-row td:last-child {
+  font-weight: 600;
+  color: #047857; /* Green color for money */
+}
+
+.loading {
+  padding: 40px;
+  text-align: center;
+  color: #6b7280;
+  font-size: 1rem;
+}
+
+.loading:after {
+  content: "...";
+  animation: dots 1.5s steps(5, end) infinite;
+}
+
+@keyframes dots {
+  0%, 20% { content: "."; }
+  40% { content: ".."; }
+  60%, 100% { content: "..."; }
+}
+
+.error {
+  padding: 30px;
+  text-align: center;
+  color: #b91c1c;
+  background-color: #fee2e2;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin: 20px 0;
+}
+
+.no-data {
+  text-align: center;
+  color: #6b7280;
+  padding: 30px 0;
+  font-style: italic;
+}

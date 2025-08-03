@@ -1,0 +1,95 @@
+# Node
+node_modules/
+build/
+dist/
+.env
+.env.*
+
+# VSCode/IDE
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# OS
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+*.log
+
+# .NET
+bin/
+obj/
+*.dbmdl
+*.dbproj.schemaview
+*.pdb
+*.cache
+*.mdb
+*.pidb
+*.svclog
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Test/coverage
+coverage/
+*.lcov
+
+# Misc
+*.tgz
+*.zip
+*.tar.gz
+*.tmp
+*.swp
+*.bak
+*.orig
+# Ignore build results
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio Code
+.vs
+.vscode/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Secrets
+secrets.json
+
+# Others
+*.dbmdl
+*.pdb
+*.cache
+*.ide
+*.sdf
+*.db
+*.mdf
+*.ldf
+
+# Rider
+.idea/
+*.sln.iml
+
+# Dotnet tools
+/.tools/
+
+# Test results
+TestResults/
+
+# Publish
+publish/

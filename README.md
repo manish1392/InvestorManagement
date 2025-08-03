@@ -8,6 +8,13 @@ Technologies used.
 2. For UI - React.js, vite, Axios, Typescript, javascript
 
 
+Folder Structure:
+
+- The src folder contains both frontend and backend code.
+- The backend code containing API's and services can be found under src/Service folder.
+- The frontend react code UI components and web pages can be found under src/UI folder.
+
+
 Code Setup:
 
 1. For Backend code setup, run dotnet restore and dotnet build commands.
